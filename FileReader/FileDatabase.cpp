@@ -27,6 +27,7 @@ namespace FileReader
 
 	vector<Person> FileDatabase::Get()
 	{
+		lock_guard<mutex> databaseLock(databaseMutex);
 		ifstream databaseFile(fileName);
 
 		json jsonData;
@@ -40,6 +41,7 @@ namespace FileReader
 	}
 	void FileDatabase::Save(vector<Person> people)
 	{
+		lock_guard<mutex> databaseLock(databaseMutex);
 		ofstream databaseFile(fileName);
 
 		json jsonData(people);
