@@ -1,1 +1,1 @@
-[{"age":31,"name":"Branko"},{"age":32,"name":"Marko"},{"age":30,"name":"Zarko"}]
+[{"age":31,"friends":[{"age":55,"name":"Mile"},{"age":45,"name":"Rile"}],"name":"Branko"},{"age":32,"friends":[{"age":55,"name":"Mile"},{"age":45,"name":"Rile"}],"name":"Marko"},{"age":30,"friends":[{"age":55,"name":"Mile"},{"age":45,"name":"Rile"}],"name":"Zarko"}]
